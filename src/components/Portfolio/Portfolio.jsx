@@ -8,7 +8,7 @@ const ProjectSection = () => {
       <div className="project-grid">
         <div className="project-item">
           <a
-            href="https://github.com/project5"
+            href="https://github.com/sainagabharatreddy/waycommunity"
             target="_blank"
             rel="noopener noreferrer"
           >
