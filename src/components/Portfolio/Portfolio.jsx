@@ -25,7 +25,7 @@ const ProjectSection = () => {
         </div>
         <div className="project-item">
           <a
-            href="https://github.com/project4"
+            href="https://github.com/sainagabharatreddy/SpringBoot-CRUD---Operations"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,7 +42,7 @@ const ProjectSection = () => {
         </div>
         <div className="project-item">
           <a
-            href="https://github.com/project6"
+            href="https://zoma-ai.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -59,7 +59,7 @@ const ProjectSection = () => {
         </div>
         <div className="project-item">
           <a
-            href="https://github.com/project7"
+            href="https://github.com/sainagabharatreddy/ecom.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,7 +76,7 @@ const ProjectSection = () => {
         </div>
         <div className="project-item">
           <a
-            href="https://github.com/project1"
+            href="https://github.com/sainagabharatreddy/Typingspeed-Checker"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -93,7 +93,7 @@ const ProjectSection = () => {
         </div>
         <div className="project-item">
           <a
-            href="https://github.com/project2"
+            href="https://github.com/sainagabharatreddy/React-FoodSearchUsingApi"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -110,7 +110,7 @@ const ProjectSection = () => {
         </div>
         <div className="project-item">
           <a
-            href="https://github.com/project3"
+            href="https://github.com/sainagabharatreddy/VideoConference-mern-"
             target="_blank"
             rel="noopener noreferrer"
           >
