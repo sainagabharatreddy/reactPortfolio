@@ -1,0 +1,97 @@
+/* Container for the section */
+.container {
+  padding:1rem;
+  text-align: center;
+  color :black;
+  font-weight: bold;
+}
+
+/* Title style */
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+
+/* Individual skill container */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 190px; /* Limit the width of each skill container */
+}
+
+/* Image container */
+.skillImageContainer {
+  width: 100px; /* Size of the round container */
+  height: 100px; /* Size of the round container */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image style */
+.skillImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 50%; /* Ensure the image is round */
+}
+
+/* Hover effect */
+.skillImageContainer:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.skillImageContainer:hover img {
+  transform: rotate(360deg); /* Rotate image on hover */
+}
+
+/* Skill title */
+.skill p {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  word-wrap: break-word; /* Ensure text wraps if it's too long */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills {
+    justify-content: flex-start; /* Align items to the start */
+    padding: 0.5rem; /* Adjust padding */
+    gap: 0.5rem; /* Adjust gap between items */
+    overflow-x: hidden; /* Hide overflow on smaller screens */
+  }
+
+  .skill {
+    max-width: 100%; /* Take full width on smaller screens */
+    flex: 0 0 calc(50% - 1rem); /* Two items per row, minus gap */
+    margin-bottom: 1rem; /* Add margin between rows */
+  }
+
+  .skillImageContainer {
+    width: 80px; /* Smaller size for round container */
+    height: 80px; /* Smaller size for round container */
+  }
+
+  .skill p {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}

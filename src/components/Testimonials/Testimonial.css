@@ -1,0 +1,115 @@
+.container {
+  position: relative;
+  background-color: orange; /* Orange background */
+  border-radius: 15px;
+  padding: 5%;
+  margin-top: 10%;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.title {
+  color: black;
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center; /* Center align title */
+  margin-bottom: 20px; /* Add space below title */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items at the start */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.aboutImage {
+  width: 30%;
+  max-width: 150px; /* Limit maximum width */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin-right: 5%; /* Space between image and items */
+}
+
+.aboutItems {
+  color: black; /* Black text */
+  flex: 1; /* Take remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Vertical gap between items */
+}
+
+.aboutItem {
+  position: relative; /* Position for hover effect */
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  list-style: none;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 163, 14, 0.15) 0%, /* Semi-transparent orange */
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor on hoverable items */
+}
+
+.aboutItem:hover,
+.aboutItem:focus,
+.aboutItem:active {
+  background-size: 100% 100%; /* Full background on hover or active */
+}
+
+.aboutItem h3 {
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-left: 10px; /* Add space between icon and text */
+}
+
+.aboutItem p {
+  font-size: 1.2vw;
+  margin-top: 5px; /* Adjust spacing */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: orange; /* Orange background */
+    padding: 5%;
+    margin: 10%;
+  }
+
+  .title {
+    font-size: 4vw; /* Larger font size for title */
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImage {
+    width: 50%; /* Adjust image width */
+    margin-bottom: 20px; /* Space below image */
+  }
+
+  .aboutItems {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .aboutItem {
+    padding: 10px; /* Adjust padding */
+  }
+
+  .aboutItem h3,
+  .aboutItem p {
+    font-size: 4vw; /* Adjust font size */
+  }
+}

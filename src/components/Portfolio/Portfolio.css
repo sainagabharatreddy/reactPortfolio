@@ -1,0 +1,62 @@
+.project-section {
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three images per row */
+  gap: 20px; /* Gap between grid items */
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #fff; /* Border with light white glow effect */
+}
+
+.project-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Light white glow effect */
+}
+
+.project-image {
+  width: 100%; /* Full width within the grid item */
+  height: 200px; /* Height for all images */
+  object-fit: cover; /* Ensure the images cover the entire area */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-description,
+.project-technologies {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.project-description {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.project-technologies {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr); /* Display 1 image per row on mobile */
+  }
+}
